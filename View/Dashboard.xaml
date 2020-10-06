@@ -1,0 +1,138 @@
+﻿<Window x:Name="Dashboard___Nothi" x:Class="Nothi_Next.View.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nothi_Next.View"
+        mc:Ignorable="d" Height="650" Width="1000" Background="#FFABF0E3" WindowState="Maximized" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="#FFABF0E3">
+    <Grid Margin="-2,0,2,0">
+
+        <Grid Margin="205,60,10,55" Background="#FFABF0E3">
+            <ComboBox BorderThickness="2.8" FontSize="13" Foreground="#FF00136A" SelectedIndex="0" VerticalAlignment="Top" Width="38"  FontWeight="Bold" Height="34" HorizontalAlignment="Left" Margin="54,30,0,0" RenderTransformOrigin="1.426,0.252" SelectionChanged="ComboBox_SelectionChanged_1">
+                <ComboBoxItem Content="---------"/>
+            </ComboBox>
+            <TextBox BorderBrush="ForestGreen" FontWeight="DemiBold" BorderThickness="3" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="সার্চ করুন" Foreground="Black" Height="56" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" Margin="92,10,127,0" />
+            <Image Source="E:\Nothi-Next\Assests\search.png"  Margin="0,30,83,0" HorizontalAlignment="Right" Width="43" VerticalAlignment="Top" Height="34"  />
+
+            <ScrollViewer Margin="30,71,27,-18" Background="#FFABF0E3" Opacity="0.8" VerticalAlignment="Bottom">
+                <StackPanel>
+                    <StackPanel>
+                        <ItemsControl x:Name="ListViewMessages" ItemsSource="{Binding essages}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Margin="3,3,3,-30" Width="650" Height="160">
+                                        <StackPanel Width="550" Background="{x:Null}" >
+
+
+
+
+
+
+
+                                            <TextBlock  Text="{Binding Source, StringFormat='উৎসঃ {0}'}" FontSize="12"  Background="#FF30FDA9" Foreground="#FF000A6C">
+                                                <TextBlock.TextDecorations>
+                                                    <TextDecoration/>
+                                                </TextBlock.TextDecorations>
+                                            </TextBlock>
+
+                                            <TextBlock Text="{Binding Sender, StringFormat='প্রেরকঃ {0}'}" FontSize="10" Foreground="#FF040202" Background="#E0FFDA"/>
+
+
+                                            <TextBlock   Text="{Binding Reciver, StringFormat='প্রাপকঃ {0}'}" FontSize="10" Background="#E0FFDA" Foreground="#FF040202"/>
+                                            <TextBlock   Text="{Binding Subject, StringFormat='বিষয়ঃ {0}'}"   FontSize="10" Foreground="#FF040202" Background="#E0FFDA"/>
+                                            <TextBlock   Text="{Binding Decision, StringFormat='সিদ্ধান্তঃ {0}'}" FontSize="10" Foreground="#FF040202" Background="#E0FFDA"/>
+
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid Height="60" VerticalAlignment="Top" Background="#ffffdb">
+            <StackPanel HorizontalAlignment="Left" Margin="20 0">
+                <Image Source="E:\Nothi-Next\Assests\nothi.png" Width="169" Height="40"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                <Image Source="E:\Nothi-Next\Assests\drop.png" Width="33" Height="40" Margin="3,0,11,0"/>
+                <Image Source="E:\Nothi-Next\Assests\bell.png" Width="33" Height="40" Margin="3,0,11,0"/>
+
+                <ComboBox FontSize="13" Width="50" Foreground="#FF00136A" SelectedIndex="0" VerticalAlignment="Center" Margin="10,0,3,0" FontWeight="Bold">
+                    <ComboBoxItem Content="বাংলা"/>
+                    <ComboBoxItem Content="Eng"/>
+
+                </ComboBox>
+                <Image Source="E:\Nothi-Next\Assests\avatar.png" Width="33" Height="40" Margin="3,0,0,0"/>
+
+                <Button Content="মুবতাসিম ফুয়াদ" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A" FontSize="15" FontWeight="Normal" VerticalAlignment="Center"/>
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Click="Button_Click">
+                    <materialDesign:PackIcon Kind="Power" Foreground="#FFA2A2A2" Width="25" Height="25" />
+                </Button>
+            </StackPanel>
+        </Grid>
+        <StackPanel Background="#FFE1F7F4" HorizontalAlignment="Left" Margin="0,60,0,0">
+            <Grid Width="200" HorizontalAlignment="Left" Background="#FFE1F7F4" Height="526">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+                    <RowDefinition Height = "*" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "40" />
+                    <ColumnDefinition Width = "100" />
+
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Uid="0" Content="ডাক আপলোড" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Margin="0,10,-30,22" Grid.RowSpan="2" Grid.Column="1" FontWeight="Bold" FontSize="12"/>
+
+                <Button Uid="1" Content="ডাক সার্চ" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Margin="0,7,10,24" Grid.RowSpan="2" Grid.Column="1" Grid.Row="1" FontWeight="Bold" FontSize="12"/>
+
+                <Button Grid.Row="2" Uid="2" Content="ডাক আপলোড" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Margin="38,0,-30,21" Grid.RowSpan="2" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="12"/>
+                <Button Grid.Row="3" Uid="3" IsEnabled="False"  Content="আগত ডাক" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Margin="0,5,-12,27" Grid.RowSpan="2" Grid.Column="1" FontWeight="Bold"/>
+                <Button Grid.Row="4" Uid="4" Content="প্রেরিত ডাক" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Margin="10,5,-30,27" Grid.RowSpan="2" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="12"/>
+                <Button Grid.Column="1" Grid.Row="5" Uid="5" Content="নথিতে উপস্থিত ডাক " Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Margin="0,6,-57,25" Grid.RowSpan="2" FontWeight="Bold" HorizontalAlignment="Left" FontSize="12"/>
+                <Button Grid.Row="6" Uid="6" Content="নথিজনিত ডাক" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Grid.ColumnSpan="2" Margin="20,0,-50,31" Grid.RowSpan="2" FontWeight="Bold" FontSize="12"/>
+                <Button Grid.Row="6" Uid="7" Content="খসড়া" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A"  Grid.ColumnSpan="2" Margin="-34,40,-50,32" Grid.RowSpan="3" FontWeight="Bold" FontSize="12"/>
+                <Button Grid.Column="1" Grid.Row="8" Uid="8" Width="150" Content="নিবন্ধন বহি" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A" Margin="-20,0,0,0" FontWeight="Bold" FontSize="12"/>
+                <Button Grid.Column="1" Grid.Row="9" Uid="9" Width="150" Content="প্রতিবেদন সমূহ" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A" Margin="-20,0,0,0" FontWeight="Bold" FontSize="12"/>
+                <Button Grid.Row="9" Uid="10" Content="ব্যক্তিগত ফোল্ডার" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A" Margin="20,41,-57,32" FontWeight="Bold" FontSize="12" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+                <Button Grid.Column="1" Grid.Row="11" Uid="11" Width="150" Content="ডাক বাছাইকরণ" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF00136A" Margin="-20,0,0,0" FontWeight="Bold" FontSize="12"/>
+                <Image Grid.Column="0" Grid.Row="0"  Source="E:\Nothi-Next\Assests\plane.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="1"  Source="E:\Nothi-Next\Assests\plane11.png" Height="30" Margin="0,11,98,0" VerticalAlignment="Top" Grid.RowSpan="2" RenderTransformOrigin="1.271,0.52" Grid.ColumnSpan="2"/>
+                <Image Grid.Column="0" Grid.Row="2"  Source="E:\Nothi-Next\Assests\plane10.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="3"  Source="E:\Nothi-Next\Assests\plane9.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="4"  Source="E:\Nothi-Next\Assests\plane8.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image  Grid.Column="0" Grid.Row="5" Source="E:\Nothi-Next\Assests\plane7.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="6"  Source="E:\Nothi-Next\Assests\plane5.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="7"  Source="E:\Nothi-Next\Assests\plane5.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="8"  Source="E:\Nothi-Next\Assests\plane4.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="9"  Source="E:\Nothi-Next\Assests\plane3.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="10" Source="E:\Nothi-Next\Assests\plane2.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+                <Image Grid.Column="0" Grid.Row="11" Source="E:\Nothi-Next\Assests\plane1.png" Width="20" Height="20" Margin="3,0,0,0" VerticalAlignment="Bottom"/>
+
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</Window>

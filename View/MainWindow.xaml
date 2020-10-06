@@ -1,0 +1,202 @@
+﻿<Window x:Name="Login__Nothi" x:Class="Nothi_Next.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Nothi_Next"
+       mc:Ignorable="d" Title="MainWindow"  
+      WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Maximized" d:DesignWidth="792.084" d:DesignHeight="790.971"  >
+
+        <Grid Margin="0,0,0,-74">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="E:\Nothi-Next\Assests\login-bg.webp" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <StackPanel Margin="40,40,40,17">
+            <StackPanel>
+
+                <Image Source="\Assests\nothi.png" Width="222" Height="84"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Width="720">
+
+                <Border Background="#FFC5C5C5" Height="526" Width="357" Opacity="0.7">
+                    <StackPanel>
+                        <TextBlock Margin="10,7" TextWrapping="Wrap" FontWeight="Normal" LineHeight="20" Foreground="Black"><Bold>ই-নথি সিস্টেমের নতুন আপডেট:</Bold> পত্র প্রেরণের সময় মোবাইল নম্বরে মেসেজ দেওয়ার অপশন তৈরি করা হয়েছে। এই ক্ষেত্রে পত্রের খসড়া তৈরির সময় প্রাপকের মোবাইল নম্বর দিয়ে সংশ্লিষ্ট মেসেজ দেওয়া যাবে। প্রাপক ই-মেইলে সংশ্লিষ্ট পত্রটি এবং মোবাইলে মেসেজ যাবে।
+
+বাংলা বানান নিরীক্ষক (Spell Checker) অর্ন্তভূক্ত করা হয়েছে। কোন শব্দের বানান নিরীক্ষা করতে হলে, সংশ্লিষ্ট শব্দের উপর কার্সর রেখে ডান বাটন ক্লিক করলে সিস্টেম ইউজারকে সঠিক শব্দটি সাজেশন দিবে। <LineBreak></LineBreak> 
+
+<Bold> ই-নথি সিস্টেম:</Bold> প্রেরণের সময় মোবাইল নম্বরে মেসেজ দেওয়ার অপশন তৈরি করা হয়েছে। এই ক্ষেত্রে পত্রের খসড়া তৈরির সময় প্রাপকের মোবাইল নম্বর দিয়ে সংশ্লিষ্ট মেসেজ দেওয়া যাবে। প্রাপক ই-মেইলে সংশ্লিষ্ট পত্রটি এবং মোবাইলে মেসেজ যাবে।</TextBlock>
+
+                        <StackPanel Margin="0,15,0,20" Height="195" Width="346">
+                            <Separator Width="349" Margin="15,0,20,7" Padding="50" Background="#FF4D007A" Height="1" />
+                            <Label Content = "হেল্প ডেস্ক" FontSize = "15"
+         FontWeight = "Bold" Width="334" Height="31"/>
+
+
+                            <Grid Height="156">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height = "*" />
+                                    <RowDefinition Height = "*" />
+                                    <RowDefinition Height = "*" />
+                                    <RowDefinition Height = "*" />
+                                    <RowDefinition Height = "*" />
+                                    <RowDefinition Height = "*" />
+
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width = "*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Separator  Background="#FF22065F" FontSize="18" Margin="10,-6,29,26" />
+
+
+                                <StackPanel Grid.Column = "0" Grid.Row = "1" Orientation = "Horizontal">
+
+                                    <Image Source="E:\Nothi-Next\Assests\phone.png" Width="12" Height="20" Margin="3,0,0,0"/>
+
+                                    <Label FontWeight="ExtraBold" Content = " +৮৮ ০১৩১৫-৬৫৪০৪৭"  VerticalAlignment = "Center" Width = "99" FontSize="8" Margin="1,9,10,9"  Height="22" Foreground="#DD380264"/>
+                                    <Image Source="E:\Nothi-Next\Assests\y1.png" Width="12" Height="19"/>
+
+                                    <TextBox x:Name = "txtName" Text = "আপনার জিজ্ঞাসা" VerticalAlignment = "Center"
+            Width = "200" Margin="3,0,0,0"/>
+
+                                </StackPanel>
+
+                                <StackPanel Grid.Column = "0" Grid.Row = "2" Orientation = "Horizontal">
+                                    <Image Source="E:\Nothi-Next\Assests\phone.png" Width="12" Height="20" Margin="3,0,0,0"/>
+
+                                    <Label Content = " +৮৮ ০১৩১৫-৬৫৪০৪৭"  VerticalAlignment = "Center" Width = "99" FontSize="8" FontWeight="Bold" Margin="1,9,10,9" Height="22" Foreground="#DD05000A"/>
+                                    <Image Source="E:\Nothi-Next\Assests\mega.png" Width="12" Height="19"/>
+
+                                    <TextBox x:Name = "txtName2" Text = "আপডেট" VerticalAlignment = "Center"
+            Width = "200" Margin="3,0,0,0"/>
+
+                                </StackPanel>
+
+                                <StackPanel Grid.Column = "0" Grid.Row = "3" Orientation = "Horizontal">
+                                    <Image Source="E:\Nothi-Next\Assests\phone.png" Width="12" Height="20" Margin="3,0,0,0"/>
+
+                                    <Label Content = " +৮৮ ০১৩১৫-৬৫৪০৪৭"  VerticalAlignment = "Center" Width = "99" FontSize="8" FontWeight="Bold" Margin="1,9,10,9" Height="22" Foreground="#DD270642"/>
+                                    <Image Source="E:\Nothi-Next\Assests\manual.png" Width="12" Height="19"/>
+
+                                    <TextBox x:Name = "txtName3" Text = "ব্যবহার সহায়িকা" VerticalAlignment = "Center"
+            Width = "200" Margin="3,0,0,0"/>
+
+                                </StackPanel>
+                                <StackPanel Grid.Column = "0" Grid.Row = "4" Orientation = "Horizontal">
+                                    <Image Source="E:\Nothi-Next\Assests\mail.png" Width="12" Height="20" Margin="3,0,0,0"/>
+
+                                    <Label Content = " support@nothi.org.bd"  VerticalAlignment = "Center" Width = "99" FontSize="8" FontWeight="Bold" Margin="1,9,10,9" Height="22"/>
+                                    <Image Source="E:\Nothi-Next\Assests\cam.png" Width="12" Height="19"/>
+
+                                    <TextBox x:Name = "txtName4" Text = "ভিডিও টিউটোরিয়াল" VerticalAlignment = "Center"
+            Width = "200" Margin="3,0,0,0"/>
+
+                                </StackPanel>
+                                <StackPanel Grid.Column = "0" Grid.Row = "5" Orientation = "Horizontal">
+                                    <Image Source="E:\Nothi-Next\Assests\fb.png" Width="12" Height="20" Margin="3,0,0,0"/>
+
+                                    <Label Content = " +৮৮ ০১৩১৫-৬৫৪০৪৭"  VerticalAlignment = "Center" Width = "99" FontSize="8" FontWeight="Bold" Margin="1,9,10,9" Height="22"/>
+                                    <Image Source="E:\Nothi-Next\Assests\cache.png" Width="12" Height="19"/>
+
+                                    <TextBox x:Name = "txtName5" Text = "ব্রাউজার ক্যাশ মুছুন" VerticalAlignment = "Center"
+            Width = "200" Margin="3,0,0,0"/>
+
+                                </StackPanel>
+
+
+                            </Grid>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Border>
+                <Border Background="White" CornerRadius="5" Height="532" Width="345" RenderTransformOrigin="0.504,0.27">
+
+
+                    <Grid  Margin="10,10,10,442">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="40"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBox x:Name="userNameTextBox" MaxLength="12"   Grid.Row = "0" Grid.Column = "0" Height="43"  Width="124"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="ইউজার নেইম" AutomationProperties.Name="userName" TextChanged="TextBox_TextChanged"  />
+                        <PasswordBox x:Name="passwordTextBox" Grid.Row = "0" Grid.Column = "1" Height="43"  Width="124" Margin="20,0,19,37" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="পাসওয়ার্ড" Grid.RowSpan="2"  />
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="12,8,0,0" Background="#FFF9F974" Opacity="0.7" FontWeight="Bold" FontSize="11">ইউজার আইডি ব্যবহার করে <LineBreak/>  প্রবেশ করুন"</TextBlock>
+                        <Button x:Name="signInButton"  Grid.Row="1" Grid.Column="1"  Background="#FF1861CB" Margin="20,10,41,-2" Click="signInButton_Click"  >
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="প্রবেশ " Height="24" Width="36" RenderTransformOrigin="0.628,0.398" >
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform AngleY="1.005"/>
+                                            <RotateTransform/>
+                                            <TranslateTransform Y="0.397"/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                                <Image Source="E:\Nothi-Next\Assests\door1.png" Width="20" Height="18"/>
+                            </StackPanel>
+                        </Button>
+
+                    </Grid>
+
+
+
+                </Border>
+
+
+            </StackPanel>
+            <StackPanel Background="Azure"  Height="52" Width="706" Margin="-22,0,0,0" >
+
+
+
+
+                <Grid Height="48" Width="700" >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height = "*" />
+
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width = "*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Margin="30,15,-18,0">কারিগরি সহযোগিতায় টাপওয়্যার</Label>
+                    <StackPanel Grid.Column = "0" Orientation = "Horizontal">
+                        <Image Height="22" Width="40" Source="E:\Nothi-Next\Assests\tapp_logo.png"  />
+                    </StackPanel>
+                    <StackPanel Grid.Column = "0" Orientation = "Horizontal">
+                        <Image Height="30" Width="48" Source="E:\Nothi-Next\Assests\bd2.png" Margin="350,0,0,0"  >
+
+                        </Image>
+                    </StackPanel>
+                    <StackPanel Grid.Column = "1" Orientation = "Horizontal">
+                        <Image Height="29" Width="60" Source="E:\Nothi-Next\Assests\a2i2.png" Margin="420,0,0,0"  >
+
+                        </Image>
+                    </StackPanel>
+                    <StackPanel Orientation = "Horizontal" >
+                        <Image Height="42" Width="52" Source="E:\Nothi-Next\Assests\ictd.webp" Margin="490,0,0,0" >
+
+                        </Image>
+                    </StackPanel>
+
+                    <Image Source="E:\Nothi-Next\Assests\doict.webp" Margin="574,4,92,10" />
+                    <Image Source="E:\Nothi-Next\Assests\mygov.png" Margin="633,4,22,0" Height="34" VerticalAlignment="Top" RenderTransformOrigin="0.493,-0.348"  />
+                </Grid>
+            </StackPanel>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
